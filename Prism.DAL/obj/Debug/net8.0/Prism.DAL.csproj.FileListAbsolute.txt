@@ -1,0 +1,14 @@
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.DAL\bin\Debug\net8.0\Prism.DAL.deps.json
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.DAL\bin\Debug\net8.0\Prism.DAL.runtimeconfig.json
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.DAL\bin\Debug\net8.0\Prism.DAL.dll
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.DAL\bin\Debug\net8.0\Prism.DAL.pdb
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.DAL\obj\Debug\net8.0\Prism.DAL.csproj.AssemblyReference.cache
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.DAL\obj\Debug\net8.0\Prism.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.DAL\obj\Debug\net8.0\Prism.DAL.AssemblyInfoInputs.cache
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.DAL\obj\Debug\net8.0\Prism.DAL.AssemblyInfo.cs
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.DAL\obj\Debug\net8.0\Prism.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.DAL\obj\Debug\net8.0\Prism.DAL.dll
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.DAL\obj\Debug\net8.0\refint\Prism.DAL.dll
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.DAL\obj\Debug\net8.0\Prism.DAL.pdb
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.DAL\obj\Debug\net8.0\Prism.DAL.genruntimeconfig.cache
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.DAL\obj\Debug\net8.0\ref\Prism.DAL.dll

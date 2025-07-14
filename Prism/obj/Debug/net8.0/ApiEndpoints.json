@@ -1,0 +1,1171 @@
+[
+  {
+    "ContainingType": "Prism.API.Controllers.BusinessController",
+    "Method": "ChangeMRlicenseStatus",
+    "RelativePath": "api/Business/ChangeMRlicenseStatus/{id}/{status}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.BusinessController",
+    "Method": "CreateOrEdit",
+    "RelativePath": "api/Business/CreateOrEdit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Prism.BL.Dtos.BusinessDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.BusinessController",
+    "Method": "DeleteOrRestoreBusiness",
+    "RelativePath": "api/Business/DeleteOrRestoreBusiness/{id}/{isDelete}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "isDelete",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.BusinessController",
+    "Method": "GetBusiness",
+    "RelativePath": "api/Business/GetBusiness/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.BusinessController",
+    "Method": "GetBusinesses",
+    "RelativePath": "api/Business/GetBusinesses/{pageNumber}/{pageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.BusinessController",
+    "Method": "GetBusinessesTestsAndSamples",
+    "RelativePath": "api/Business/GetBusinessesTestsAndSamples",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.BusinessController",
+    "Method": "GetBusinessesWithOutPagination",
+    "RelativePath": "api/Business/GetBusinessesWithOutPagination",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.CommonController",
+    "Method": "GetLatestBuildInfo",
+    "RelativePath": "api/Common/GetLatestBuildInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.IntroController",
+    "Method": "Index",
+    "RelativePath": "api/Intro/Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderController",
+    "Method": "ApproveOrReportOrReleaseOrder",
+    "RelativePath": "api/Order/ApproveOrReportOrReleaseOrder/{orderId}/{status}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderController",
+    "Method": "CancelOrder",
+    "RelativePath": "api/Order/CancelOrder/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderController",
+    "Method": "CompleteOrder",
+    "RelativePath": "api/Order/CompleteOrder/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderController",
+    "Method": "CreateOrEdit",
+    "RelativePath": "api/Order/CreateOrEdit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Prism.BL.Dtos.OrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderController",
+    "Method": "DeleteOrder",
+    "RelativePath": "api/Order/DeleteOrder",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderController",
+    "Method": "GetOrder",
+    "RelativePath": "api/Order/GetOrder/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderController",
+    "Method": "GetOrderBySamplerId",
+    "RelativePath": "api/Order/GetOrderBySamplerId/{isConfirmationPage}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "isConfirmationPage",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderController",
+    "Method": "GetOrders",
+    "RelativePath": "api/Order/GetOrders/{pageNumber}/{pageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderReportsController",
+    "Method": "GetFilteredStatistics",
+    "RelativePath": "api/OrderReports/GetFilteredStatistics/{type}/{duration}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "type",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "duration",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderReportsController",
+    "Method": "GetStatistics",
+    "RelativePath": "api/OrderReports/GetStatistics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderSamplesController",
+    "Method": "AcceptOrderSamples",
+    "RelativePath": "api/OrderSamples/AcceptOrderSamples/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderSamplesController",
+    "Method": "CreateOrEditOrderSample",
+    "RelativePath": "api/OrderSamples/CreateOrEditOrderSample",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderSamplesController",
+    "Method": "GetFormData",
+    "RelativePath": "api/OrderSamples/GetFormData/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderSamplesController",
+    "Method": "GetOrderSamples",
+    "RelativePath": "api/OrderSamples/GetOrderSamples/{pageNumber}/{pageSize}/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderSamplesController",
+    "Method": "GetOrderSamplesBySamplerId",
+    "RelativePath": "api/OrderSamples/GetOrderSamplesBySamplerId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderSamplesController",
+    "Method": "SamplesSearch",
+    "RelativePath": "api/OrderSamples/SamplesSearch/{pageNumber}/{pageSize}/{orderName}/{testId}/{sampleId}/{pendingSplit}/{pendingForeignMatterTesting}/{pendingWaterActivity}/{totalYeastAndMoldCount}/{totalColiform}/{eColi}/{salmonella}/{aspergillus}/{pendingPesticidesTesting}/{pendingMetalTesting}/{pendingPotencyTesting}/{pendingTerpensTesting}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "orderName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "testId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "sampleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pendingSplit",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "pendingForeignMatterTesting",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "pendingWaterActivity",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "totalYeastAndMoldCount",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "totalColiform",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "eColi",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "salmonella",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "aspergillus",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "pendingPesticidesTesting",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "pendingMetalTesting",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "pendingPotencyTesting",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "pendingTerpensTesting",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderSamplesController",
+    "Method": "SplitSample",
+    "RelativePath": "api/OrderSamples/SplitSample/{id}/{isSplit}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "isSplit",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderSamplesTestsController",
+    "Method": "AddTest",
+    "RelativePath": "api/OrderSamplesTests/AddTest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Prism.BL.Dtos.OrderSampleTestsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderSamplesTestsController",
+    "Method": "GetGroupTestsList",
+    "RelativePath": "api/OrderSamplesTests/GetGroupTestsList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.OrderSamplesTestsController",
+    "Method": "GetSampleTests",
+    "RelativePath": "api/OrderSamplesTests/GetSampleTests/{sampleId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sampleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "ChangeUserActivation",
+    "RelativePath": "api/User/ChangeUserActivation/{id}/{status}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "CreateOrEditUser",
+    "RelativePath": "api/User/CreateOrEditUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RegistrationDateTime",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsActive",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsDeleted",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RoleId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SamplerOrdersPickedUp",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SamplerOrdersDroppedOff",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MobileNotificationToken.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MobileNotificationToken.UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MobileNotificationToken.DeviceId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MobileNotificationToken.DeviceToken",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MobileNotificationToken.Platform",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MobileNotificationToken.IsStoped",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "MobileNotificationToken.IsDeleted",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "SamplerDocuments",
+        "Type": "System.Collections.Generic.List\u00601[[Prism.BL.Dtos.SamplerDocumentsDto, Prism.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsSent",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.DisplayName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Qr",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Passcode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Time",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.IsDeleted",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.ModifiedFileName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.FullName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Phone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.CreateAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.UpdateAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.RegistrationDateTime",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.IsActive",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.IsDeleted",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.Role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.RoleId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.SamplerOrdersPickedUp",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.SamplerOrdersDroppedOff",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.MobileNotificationToken.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.MobileNotificationToken.UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.MobileNotificationToken.DeviceId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.MobileNotificationToken.DeviceToken",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.MobileNotificationToken.Platform",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.MobileNotificationToken.IsStoped",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.MobileNotificationToken.IsDeleted",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.SamplerDocuments",
+        "Type": "System.Collections.Generic.List\u00601[[Prism.BL.Dtos.SamplerDocumentsDto, Prism.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.IsSent",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.CustomerResult.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.CustomerResult.UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.CustomerResult.DisplayName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.CustomerResult.FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.CustomerResult.Qr",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.CustomerResult.Passcode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.CustomerResult.Time",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.CustomerResult.IsDeleted",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.CustomerResult.ModifiedFileName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.CustomerResult.FullName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.CustomerResult.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.CustomerResult.Phone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.CustomerResult.CreateAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.CustomerResult.UpdateAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CustomerResult.Customer.CustomerResult.Customer",
+        "Type": "Prism.BL.Dtos.AccountDto",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/User/DeleteUser/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "ForgetPassword",
+    "RelativePath": "api/User/ForgetPassword/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "GetAccountByPhoneNumber",
+    "RelativePath": "api/User/GetAccountByPhoneNumber",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "GetAdminDashboardData",
+    "RelativePath": "api/User/GetAdminDashboardData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "GetLabTechDashboardData",
+    "RelativePath": "api/User/GetLabTechDashboardData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "GetRoles",
+    "RelativePath": "api/User/GetRoles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "GetSamplerDashboardData",
+    "RelativePath": "api/User/GetSamplerDashboardData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "GetSamplers",
+    "RelativePath": "api/User/GetSamplers/{pageNumber}/{pageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "GetUser",
+    "RelativePath": "api/User/GetUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "GetUser",
+    "RelativePath": "api/User/GetUser/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "GetUsers",
+    "RelativePath": "api/User/GetUsers/{pageNumber}/{pageSize}/{role}/{hasOrders}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "hasOrders",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Prism.BL.Dtos.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "LoginByPhoneNumber",
+    "RelativePath": "api/User/LoginByPhoneNumber",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Prism.BL.Dtos.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "Register",
+    "RelativePath": "api/User/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Prism.BL.Dtos.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "RegisterByAdmin",
+    "RelativePath": "api/User/RegisterByAdmin/{phoneNumber}/{role}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phoneNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prism.API.Controllers.UserController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/User/ResetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Prism.BL.Dtos.ResetPasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

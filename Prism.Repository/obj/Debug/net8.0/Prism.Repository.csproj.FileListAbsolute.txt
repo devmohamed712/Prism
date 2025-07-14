@@ -1,0 +1,15 @@
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.Repository\bin\Debug\net8.0\Prism.Repository.deps.json
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.Repository\bin\Debug\net8.0\Prism.Repository.dll
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.Repository\bin\Debug\net8.0\Prism.Repository.pdb
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.Repository\bin\Debug\net8.0\Prism.DAL.dll
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.Repository\bin\Debug\net8.0\Prism.DAL.pdb
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.Repository\obj\Debug\net8.0\Prism.Repository.csproj.AssemblyReference.cache
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.Repository\obj\Debug\net8.0\Prism.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.Repository\obj\Debug\net8.0\Prism.Repository.AssemblyInfoInputs.cache
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.Repository\obj\Debug\net8.0\Prism.Repository.AssemblyInfo.cs
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.Repository\obj\Debug\net8.0\Prism.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.Repository\obj\Debug\net8.0\Prism.Re.D1F9C6FA.Up2Date
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.Repository\obj\Debug\net8.0\Prism.Repository.dll
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.Repository\obj\Debug\net8.0\refint\Prism.Repository.dll
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.Repository\obj\Debug\net8.0\Prism.Repository.pdb
+C:\Users\Lenovo\OneDrive\Desktop\Prism\Prism.Repository\obj\Debug\net8.0\ref\Prism.Repository.dll

@@ -1,0 +1,2842 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Prism.API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Business/GetBusinesses/{pageNumber}/{pageSize}": {
+      "get": {
+        "tags": [
+          "Business"
+        ],
+        "parameters": [
+          {
+            "name": "pageNumber",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Business/GetBusiness/{id}": {
+      "get": {
+        "tags": [
+          "Business"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Business/GetBusinessesWithOutPagination": {
+      "get": {
+        "tags": [
+          "Business"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Business/CreateOrEdit": {
+      "post": {
+        "tags": [
+          "Business"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BusinessDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BusinessDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BusinessDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BusinessDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Business/DeleteOrRestoreBusiness/{id}/{isDelete}": {
+      "get": {
+        "tags": [
+          "Business"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "isDelete",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Business/ChangeMRlicenseStatus/{id}/{status}": {
+      "get": {
+        "tags": [
+          "Business"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "status",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Business/GetBusinessesTestsAndSamples": {
+      "get": {
+        "tags": [
+          "Business"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Common/GetLatestBuildInfo": {
+      "get": {
+        "tags": [
+          "Common"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Intro/Index": {
+      "get": {
+        "tags": [
+          "Intro"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Order/GetOrders/{pageNumber}/{pageSize}": {
+      "get": {
+        "tags": [
+          "Order"
+        ],
+        "parameters": [
+          {
+            "name": "pageNumber",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Order/GetOrder/{id}": {
+      "get": {
+        "tags": [
+          "Order"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Order/GetOrderBySamplerId/{isConfirmationPage}": {
+      "get": {
+        "tags": [
+          "Order"
+        ],
+        "parameters": [
+          {
+            "name": "isConfirmationPage",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Order/CreateOrEdit": {
+      "post": {
+        "tags": [
+          "Order"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Order/DeleteOrder": {
+      "get": {
+        "tags": [
+          "Order"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Order/CancelOrder/{id}": {
+      "get": {
+        "tags": [
+          "Order"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Order/CompleteOrder/{orderId}": {
+      "get": {
+        "tags": [
+          "Order"
+        ],
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Order/ApproveOrReportOrReleaseOrder/{orderId}/{status}": {
+      "get": {
+        "tags": [
+          "Order"
+        ],
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "status",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/OrderReports/GetStatistics": {
+      "get": {
+        "tags": [
+          "OrderReports"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/OrderReports/GetFilteredStatistics/{type}/{duration}": {
+      "get": {
+        "tags": [
+          "OrderReports"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "duration",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/OrderSamples/GetOrderSamplesBySamplerId": {
+      "get": {
+        "tags": [
+          "OrderSamples"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/OrderSamples/GetFormData/{orderId}": {
+      "get": {
+        "tags": [
+          "OrderSamples"
+        ],
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/OrderSamples/CreateOrEditOrderSample": {
+      "post": {
+        "tags": [
+          "OrderSamples"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/OrderSamples/GetOrderSamples/{pageNumber}/{pageSize}/{orderId}": {
+      "get": {
+        "tags": [
+          "OrderSamples"
+        ],
+        "parameters": [
+          {
+            "name": "pageNumber",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "orderId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/OrderSamples/AcceptOrderSamples/{orderId}": {
+      "get": {
+        "tags": [
+          "OrderSamples"
+        ],
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/OrderSamples/SplitSample/{id}/{isSplit}": {
+      "get": {
+        "tags": [
+          "OrderSamples"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "isSplit",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/OrderSamples/SamplesSearch/{pageNumber}/{pageSize}/{orderName}/{testId}/{sampleId}/{pendingSplit}/{pendingForeignMatterTesting}/{pendingWaterActivity}/{totalYeastAndMoldCount}/{totalColiform}/{eColi}/{salmonella}/{aspergillus}/{pendingPesticidesTesting}/{pendingMetalTesting}/{pendingPotencyTesting}/{pendingTerpensTesting}": {
+      "get": {
+        "tags": [
+          "OrderSamples"
+        ],
+        "parameters": [
+          {
+            "name": "pageNumber",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "orderName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "sampleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "pendingSplit",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "pendingForeignMatterTesting",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "pendingWaterActivity",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "totalYeastAndMoldCount",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "totalColiform",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "eColi",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "salmonella",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "aspergillus",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "pendingPesticidesTesting",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "pendingMetalTesting",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "pendingPotencyTesting",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "pendingTerpensTesting",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/OrderSamplesTests/GetSampleTests/{sampleId}": {
+      "get": {
+        "tags": [
+          "OrderSamplesTests"
+        ],
+        "parameters": [
+          {
+            "name": "sampleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/OrderSamplesTests/AddTest": {
+      "post": {
+        "tags": [
+          "OrderSamplesTests"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderSampleTestsDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderSampleTestsDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderSampleTestsDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderSampleTestsDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/OrderSamplesTests/GetGroupTestsList": {
+      "get": {
+        "tags": [
+          "OrderSamplesTests"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/Register": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/Login": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/ForgetPassword/{email}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/ResetPassword": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResetPasswordDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResetPasswordDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResetPasswordDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResetPasswordDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/LoginByPhoneNumber": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/GetAccountByPhoneNumber": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "phoneNumber",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/GetUser": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/GetUser/{userId}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/GetUsers/{pageNumber}/{pageSize}/{role}/{hasOrders}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "pageNumber",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "role",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "hasOrders",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/CreateOrEditUser": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "CustomerResult.Customer.MobileNotificationToken.DeviceId",
+                  "CustomerResult.Customer.MobileNotificationToken.DeviceToken",
+                  "CustomerResult.Customer.MobileNotificationToken.Platform",
+                  "CustomerResult.Customer.Name",
+                  "CustomerResult.Customer.PhoneNumber",
+                  "MobileNotificationToken.DeviceId",
+                  "MobileNotificationToken.DeviceToken",
+                  "MobileNotificationToken.Platform",
+                  "Name",
+                  "PhoneNumber"
+                ],
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Name": {
+                    "maxLength": 512,
+                    "type": "string"
+                  },
+                  "PhoneNumber": {
+                    "maxLength": 128,
+                    "type": "string"
+                  },
+                  "RegistrationDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "IsActive": {
+                    "type": "boolean"
+                  },
+                  "IsDeleted": {
+                    "type": "boolean"
+                  },
+                  "Email": {
+                    "type": "string"
+                  },
+                  "Role": {
+                    "type": "string"
+                  },
+                  "RoleId": {
+                    "type": "string"
+                  },
+                  "SamplerOrdersPickedUp": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "SamplerOrdersDroppedOff": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "MobileNotificationToken.Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "MobileNotificationToken.UserId": {
+                    "type": "string"
+                  },
+                  "MobileNotificationToken.DeviceId": {
+                    "type": "string"
+                  },
+                  "MobileNotificationToken.DeviceToken": {
+                    "type": "string"
+                  },
+                  "MobileNotificationToken.Platform": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "MobileNotificationToken.IsStoped": {
+                    "type": "boolean"
+                  },
+                  "MobileNotificationToken.IsDeleted": {
+                    "type": "boolean"
+                  },
+                  "SamplerDocuments": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/SamplerDocumentsDto"
+                    }
+                  },
+                  "IsSent": {
+                    "type": "boolean"
+                  },
+                  "CustomerResult.Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "CustomerResult.UserId": {
+                    "type": "string"
+                  },
+                  "CustomerResult.DisplayName": {
+                    "type": "string"
+                  },
+                  "CustomerResult.FileName": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Qr": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Passcode": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Time": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "CustomerResult.IsDeleted": {
+                    "type": "boolean"
+                  },
+                  "CustomerResult.ModifiedFileName": {
+                    "type": "string"
+                  },
+                  "CustomerResult.FullName": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Email": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Phone": {
+                    "type": "string"
+                  },
+                  "CustomerResult.CreateAt": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "CustomerResult.UpdateAt": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "CustomerResult.Customer.Id": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.Name": {
+                    "maxLength": 512,
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.PhoneNumber": {
+                    "maxLength": 128,
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.RegistrationDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "CustomerResult.Customer.IsActive": {
+                    "type": "boolean"
+                  },
+                  "CustomerResult.Customer.IsDeleted": {
+                    "type": "boolean"
+                  },
+                  "CustomerResult.Customer.Email": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.Role": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.RoleId": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.SamplerOrdersPickedUp": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "CustomerResult.Customer.SamplerOrdersDroppedOff": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "CustomerResult.Customer.MobileNotificationToken.Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "CustomerResult.Customer.MobileNotificationToken.UserId": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.MobileNotificationToken.DeviceId": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.MobileNotificationToken.DeviceToken": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.MobileNotificationToken.Platform": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "CustomerResult.Customer.MobileNotificationToken.IsStoped": {
+                    "type": "boolean"
+                  },
+                  "CustomerResult.Customer.MobileNotificationToken.IsDeleted": {
+                    "type": "boolean"
+                  },
+                  "CustomerResult.Customer.SamplerDocuments": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/SamplerDocumentsDto"
+                    }
+                  },
+                  "CustomerResult.Customer.IsSent": {
+                    "type": "boolean"
+                  },
+                  "CustomerResult.Customer.CustomerResult.Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "CustomerResult.Customer.CustomerResult.UserId": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.CustomerResult.DisplayName": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.CustomerResult.FileName": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.CustomerResult.Qr": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.CustomerResult.Passcode": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.CustomerResult.Time": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "CustomerResult.Customer.CustomerResult.IsDeleted": {
+                    "type": "boolean"
+                  },
+                  "CustomerResult.Customer.CustomerResult.ModifiedFileName": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.CustomerResult.FullName": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.CustomerResult.Email": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.CustomerResult.Phone": {
+                    "type": "string"
+                  },
+                  "CustomerResult.Customer.CustomerResult.CreateAt": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "CustomerResult.Customer.CustomerResult.UpdateAt": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "CustomerResult.Customer.CustomerResult.Customer": {
+                    "$ref": "#/components/schemas/AccountDto"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Name": {
+                  "style": "form"
+                },
+                "PhoneNumber": {
+                  "style": "form"
+                },
+                "RegistrationDateTime": {
+                  "style": "form"
+                },
+                "IsActive": {
+                  "style": "form"
+                },
+                "IsDeleted": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "Role": {
+                  "style": "form"
+                },
+                "RoleId": {
+                  "style": "form"
+                },
+                "SamplerOrdersPickedUp": {
+                  "style": "form"
+                },
+                "SamplerOrdersDroppedOff": {
+                  "style": "form"
+                },
+                "MobileNotificationToken.Id": {
+                  "style": "form"
+                },
+                "MobileNotificationToken.UserId": {
+                  "style": "form"
+                },
+                "MobileNotificationToken.DeviceId": {
+                  "style": "form"
+                },
+                "MobileNotificationToken.DeviceToken": {
+                  "style": "form"
+                },
+                "MobileNotificationToken.Platform": {
+                  "style": "form"
+                },
+                "MobileNotificationToken.IsStoped": {
+                  "style": "form"
+                },
+                "MobileNotificationToken.IsDeleted": {
+                  "style": "form"
+                },
+                "SamplerDocuments": {
+                  "style": "form"
+                },
+                "IsSent": {
+                  "style": "form"
+                },
+                "CustomerResult.Id": {
+                  "style": "form"
+                },
+                "CustomerResult.UserId": {
+                  "style": "form"
+                },
+                "CustomerResult.DisplayName": {
+                  "style": "form"
+                },
+                "CustomerResult.FileName": {
+                  "style": "form"
+                },
+                "CustomerResult.Qr": {
+                  "style": "form"
+                },
+                "CustomerResult.Passcode": {
+                  "style": "form"
+                },
+                "CustomerResult.Time": {
+                  "style": "form"
+                },
+                "CustomerResult.IsDeleted": {
+                  "style": "form"
+                },
+                "CustomerResult.ModifiedFileName": {
+                  "style": "form"
+                },
+                "CustomerResult.FullName": {
+                  "style": "form"
+                },
+                "CustomerResult.Email": {
+                  "style": "form"
+                },
+                "CustomerResult.Phone": {
+                  "style": "form"
+                },
+                "CustomerResult.CreateAt": {
+                  "style": "form"
+                },
+                "CustomerResult.UpdateAt": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.Id": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.Name": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.PhoneNumber": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.RegistrationDateTime": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.IsActive": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.IsDeleted": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.Email": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.Role": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.RoleId": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.SamplerOrdersPickedUp": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.SamplerOrdersDroppedOff": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.MobileNotificationToken.Id": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.MobileNotificationToken.UserId": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.MobileNotificationToken.DeviceId": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.MobileNotificationToken.DeviceToken": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.MobileNotificationToken.Platform": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.MobileNotificationToken.IsStoped": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.MobileNotificationToken.IsDeleted": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.SamplerDocuments": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.IsSent": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.CustomerResult.Id": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.CustomerResult.UserId": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.CustomerResult.DisplayName": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.CustomerResult.FileName": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.CustomerResult.Qr": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.CustomerResult.Passcode": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.CustomerResult.Time": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.CustomerResult.IsDeleted": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.CustomerResult.ModifiedFileName": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.CustomerResult.FullName": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.CustomerResult.Email": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.CustomerResult.Phone": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.CustomerResult.CreateAt": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.CustomerResult.UpdateAt": {
+                  "style": "form"
+                },
+                "CustomerResult.Customer.CustomerResult.Customer": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/ChangeUserActivation/{id}/{status}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "status",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/DeleteUser/{userId}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/RegisterByAdmin/{phoneNumber}/{role}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "phoneNumber",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "role",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/GetRoles": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/GetSamplers/{pageNumber}/{pageSize}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "pageNumber",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/GetAdminDashboardData": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/GetSamplerDashboardData": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/GetLabTechDashboardData": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AccountDto": {
+        "required": [
+          "name",
+          "phoneNumber"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "maxLength": 512,
+            "minLength": 1,
+            "type": "string"
+          },
+          "phoneNumber": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          },
+          "registrationDateTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "roleId": {
+            "type": "string",
+            "nullable": true
+          },
+          "samplerOrdersPickedUp": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "samplerOrdersDroppedOff": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mobileNotificationToken": {
+            "$ref": "#/components/schemas/MobileNotificationTokensDto"
+          },
+          "samplerDocuments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SamplerDocumentsDto"
+            },
+            "nullable": true
+          },
+          "isSent": {
+            "type": "boolean"
+          },
+          "customerResult": {
+            "$ref": "#/components/schemas/CustomerResultsDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BusinessAddressesDto": {
+        "required": [
+          "address",
+          "isMain",
+          "latitude",
+          "longitude"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "address": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string"
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "country": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "areaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "zipcode": {
+            "type": "string",
+            "nullable": true
+          },
+          "businessId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isMain": {
+            "type": "boolean"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "areaName": {
+            "type": "string",
+            "nullable": true
+          },
+          "stateName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BusinessContactsDto": {
+        "required": [
+          "aboutUsId",
+          "emailAddress",
+          "firstName",
+          "lastName",
+          "phoneNumber",
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "firstName": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "lastName": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "phoneNumber": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "emailAddress": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "aboutUsId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "businessId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BusinessDto": {
+        "required": [
+          "emailAddress",
+          "entityName",
+          "facilityLicensesNumber",
+          "phoneNumber"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "entityName": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "phoneNumber": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "emailAddress": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "facilityLicensesNumber": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "licenseTypes": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "medicalLicense": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "recreationalLicense": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "contacts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BusinessContactsDto"
+            },
+            "nullable": true
+          },
+          "addresses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BusinessAddressesDto"
+            },
+            "nullable": true
+          },
+          "tests": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BusinessTestsDto"
+            },
+            "nullable": true
+          },
+          "samples": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BusinessSamplesDto"
+            },
+            "nullable": true
+          },
+          "ordersCount": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BusinessSamplesDto": {
+        "required": [
+          "businessId",
+          "sampleTypeId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "businessId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sampleTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "sampleType": {
+            "$ref": "#/components/schemas/SampleTypesDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BusinessTestsDto": {
+        "required": [
+          "testTypeId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "businessId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "testTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "testSubTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "testTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testType": {
+            "$ref": "#/components/schemas/TestTypesDto"
+          },
+          "testSubType": {
+            "$ref": "#/components/schemas/TestSubTypesDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CustomerResultsDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "qr": {
+            "type": "string",
+            "nullable": true
+          },
+          "passcode": {
+            "type": "string",
+            "nullable": true
+          },
+          "time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "modifiedFileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "createAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "customer": {
+            "$ref": "#/components/schemas/AccountDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GroupTestsDto": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginDto": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "token": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "firebaseUserId": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobileNotificationToken": {
+            "$ref": "#/components/schemas/MobileNotificationTokensDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MobileNotificationTokensDto": {
+        "required": [
+          "deviceId",
+          "deviceToken",
+          "platform"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "deviceId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "deviceToken": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "platform": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isStoped": {
+            "type": "boolean"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "OrderDto": {
+        "required": [
+          "businessId",
+          "estimateNumber"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "maxLength": 128,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "businessId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "samplerId": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "estimateNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "companyOrIndividual": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "adultUse": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "med": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "isCanceled": {
+            "type": "boolean"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "labTechFilledFormsCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "samplerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusName": {
+            "type": "string",
+            "nullable": true
+          },
+          "currentSampleForm": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "business": {
+            "$ref": "#/components/schemas/BusinessDto"
+          },
+          "businessContacts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BusinessContactsDto"
+            },
+            "nullable": true
+          },
+          "orderSamples": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrderSamplesDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OrderSampleTestsDto": {
+        "required": [
+          "orderSampleId",
+          "testId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orderSampleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "testId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "statusId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "labTechId": {
+            "type": "string",
+            "nullable": true
+          },
+          "orderSample": {
+            "$ref": "#/components/schemas/OrderSamplesDto"
+          },
+          "test": {
+            "$ref": "#/components/schemas/GroupTestsDto"
+          },
+          "testStatus": {
+            "$ref": "#/components/schemas/SampleTestStatusDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "OrderSamplesDto": {
+        "required": [
+          "orderId",
+          "testTypeId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orderId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "testTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "facilityRepPrintedName": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "facilityRepAttachedPhoto": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "facilityRepSignature": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "checkWeightMeasurement": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "metrcSourcePackageId": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "weightOfSourcePackage": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "nameOfProduct": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "typeOfProduct": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "numberOfContainers": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "weightOfSampleCollected": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "numberOfIncruments": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "noteAnyEquipentUsed": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "metrcManifest": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "samplerPrintedName": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "samplerSignature": {
+            "type": "string",
+            "nullable": true
+          },
+          "prismAccession": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "testSubTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "isSplit": {
+            "type": "boolean"
+          },
+          "statusId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "progress": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "labTechId": {
+            "type": "string",
+            "nullable": true
+          },
+          "foreignMaterial": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "microbiology": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "potency": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "pesticides": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "heavyMetals": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "waterActivity": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "terpenes": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "other": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "labTechSignature": {
+            "type": "string",
+            "nullable": true
+          },
+          "weightBeforeDestruction": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dateOfDistruction": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "resposiblePersonnel": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "groupA": {
+            "type": "string",
+            "nullable": true
+          },
+          "groupB": {
+            "type": "string",
+            "nullable": true
+          },
+          "sampleOrder": {
+            "$ref": "#/components/schemas/OrderDto"
+          },
+          "sampleTest": {
+            "$ref": "#/components/schemas/TestTypesDto"
+          },
+          "testStatus": {
+            "$ref": "#/components/schemas/SampleTestStatusDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegisterDto": {
+        "required": [
+          "email",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "password": {
+            "maxLength": 255,
+            "minLength": 8,
+            "type": "string"
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "token": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResetPasswordDto": {
+        "required": [
+          "confirmPassword",
+          "email",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "password": {
+            "maxLength": 255,
+            "minLength": 8,
+            "type": "string"
+          },
+          "confirmPassword": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "token": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SampleTestStatusDto": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SampleTypesDto": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SamplerDocumentsDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "accountId": {
+            "type": "string",
+            "nullable": true
+          },
+          "samplerDocumentTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "expireDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileRealName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "samplerDocumentType": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TestSubTypesDto": {
+        "required": [
+          "name",
+          "orderTypeId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string"
+          },
+          "orderTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TestTypesDto": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "maxLength": 512,
+            "minLength": 0,
+            "type": "string"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
